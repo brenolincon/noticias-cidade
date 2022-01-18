@@ -4,9 +4,18 @@
   padding: 0;
 }
 
+/*Variaveis*/
+:root {
+  --branco: #fff;
+  --cinza-claro: #f5f5f5;
+  --light-red: #b10333;
+  --dark-red: #69001d;
+  --red: #de003e;
+}
+
 body {
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
-  background: #fff url(./img/fundo.png) repeat-x;
+  background: var(--branco) url(./img/fundo.png) repeat-x;
 }
 
 #container {
@@ -36,7 +45,7 @@ ul {
 
 #topo ul {
   margin-top: 30px;
-  background: #b10333;
+  background: var(--light-red);
   float: left;
 }
 
@@ -50,12 +59,12 @@ ul {
   padding: 0.5em 1.5em;
   line-height: 2.1em;
   text-decoration: none;
-  color: #fff;
+  color: var(--branco);
   background: url(./img/divisor.png) repeat-y;
 }
 
 #topo ul a:hover {
-  color: #69001d;
+  color: var(--dark-red);
 }
 
 body.home #menu-superior a#home,
@@ -65,7 +74,44 @@ body.economia #menu-superior a#economia,
 body.saude #menu-superior a#saude,
 body.ciencia #menu-superior a#ciencia,
 body.fotos #menu-superior a#fotos {
-  color: #fff;
-  background: #de003e;
+  color: var(--branco);
+  background: var(--red);
   cursor: text;
+}
+
+/*Layout site*/
+#conteudo {
+  margin-top: 60px;
+  background: var(--cinza-claro);
+}
+
+#principal {
+  width: 270px;
+  float: left;
+  background: blue;
+}
+
+#secundario {
+  width: 270px;
+  float: left;
+  background: green;
+}
+
+#lateral {
+  width: 180px;
+  float: left;
+  background: yellow;
+}
+
+/*Rodapé*/
+#rodape {
+  clear: both;
+  background: #294c71;
+  padding: 20px;
+}
+
+#conteudo-rodape {
+  width: 750px;
+  margin: 0 auto;
+  color: var(--branco);
 }
