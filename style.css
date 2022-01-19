@@ -11,6 +11,7 @@
   --light-red: #b10333;
   --dark-red: #69001d;
   --red: #de003e;
+  --azul-rodape: #294c71;
 }
 
 body {
@@ -88,25 +89,54 @@ body.fotos #menu-superior a#fotos {
 #principal {
   width: 270px;
   float: left;
-  background: blue;
+  margin: 0 0 20px 195px;
+}
+
+#uma-coluna #principal {
+  width: 750px;
+  margin: 0 0 20px 0;
+}
+
+#duas-colunas #principal {
+  width: 555px;
 }
 
 #secundario {
   width: 270px;
   float: left;
-  background: green;
+  margin: 0 0 20px 15px;
 }
 
 #lateral {
   width: 180px;
   float: left;
-  background: yellow;
+  margin: 0 0 20px -750px;
+}
+
+/*Caixa*/
+.caixa {
+  margin: 10px 0;
+  padding: 5px;
+  background: #f3f3f3 url(./img/fundo-caixa.png);
+}
+
+h2 {
+  font-size: 1em;
+  background: var(--azul-rodape);
+  color: var(--branco);
+  padding: 5px;
+}
+
+.caixa-conteudo {
+  background: var(--branco);
+  padding: 5px;
+  margin-top: 5px;
 }
 
 /*Rodapé*/
 #rodape {
   clear: both;
-  background: #294c71;
+  background: var(--azul-rodape);
   padding: 20px;
 }
 
