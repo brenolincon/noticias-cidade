@@ -12,6 +12,7 @@
   --dark-red: #69001d;
   --red: #de003e;
   --azul-rodape: #294c71;
+  --pad-padrao: 5px;
 }
 
 body {
@@ -116,7 +117,7 @@ body.fotos #menu-superior a#fotos {
 /*Caixa*/
 .caixa {
   margin: 10px 0;
-  padding: 5px;
+  padding:var(--pad-padrao);
   background: #f3f3f3 url(./img/fundo-caixa.png);
 }
 
@@ -124,13 +125,52 @@ h2 {
   font-size: 1em;
   background: var(--azul-rodape);
   color: var(--branco);
-  padding: 5px;
+  padding:var(--pad-padrao);
 }
 
-.caixa-conteudo {
+.conteudo-caixa {
   background: var(--branco);
-  padding: 5px;
-  margin-top: 5px;
+  padding:var(--pad-padrao);
+  margin-top:var(--pad-padrao);
+}
+
+/*Menu lateral*/
+#lateral ul a {
+  font-size: 0.9em;
+  padding: 3px;
+  display: block;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+  background: #f9f9f9 url(./img/marcador.png) no-repeat left center;
+  padding-left: 20px;
+  color: #a1a1a1;
+}
+
+/*Formulário*/
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input {
+  padding: var(--pad-padrao);
+  width: 125px;
+  font-size: 0.9em;
+  background-color: var(--branco);
+  border: none;
+  outline: #fff;
+}
+
+input.submit {
+  width: 80px;
+  color: var(--branco);
+  background-color: var(--light-red);border: 2px solid #870529;
+ margin-top: var(--pad-padrao);
 }
 
 /*Rodapé*/
